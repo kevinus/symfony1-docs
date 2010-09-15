@@ -1,4 +1,4 @@
-Продвинутая маршрутизация
+﻿Продвинутая маршрутизация
 =========================
 
 *by Ryan Weaver*
@@ -28,14 +28,13 @@
 >Наименование `Sympal` мы позаимствовали у одноименного проекта Jonathan Wage
 >[Sympal](http://www.sympalphp.org/), CMF, созданная на symfony.
 
-This project has two basic requirements:
 Проект имеет два основных требования:
 
   * Пользователь должен иметь возможность создавать страницы и указывать для них
     title, content и URL.
 
   * Приложение должно быть создано внутри одного проекта symfony, который контролирует
-    фронтэнд и бэкэнд всех клентских сайтов, определяя клиента и загружая корректные
+    фронтэнд и бэкэнд всех клиентских сайтов, определяя клиента и загружая корректные
     данные для поддомена.
 
 >**NOTE**
@@ -113,13 +112,6 @@ This project has two basic requirements:
     http://citypub.sympalbuilder.com/menu
 
 ### Маршрутизация
-
-Each page of a Sympal Builder website corresponds directly to a `Page` model
-object, which defines the title and content of its output. To link each URL
-specifically to a `Page` object, create an object route of type
-`sfDoctrineRoute` that uses the `slug` field. The following code will
-automatically look for a `Page` object in the database with a `slug` field
-that matches the url:
 
 Каждая страница вебсайта Sympal Builder напрямую соответствует объекту `Page`,
 который определяет ее заголовок и содержание. Для того чтобы связать каждый URL с его страницей,
